@@ -13,6 +13,7 @@ sysctl -p /etc/sysctl.conf
 
 
 pip install mysql-connector-python
+pip install requests
 
 
 yum install epel-release elrepo-release -y
