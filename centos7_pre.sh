@@ -8,7 +8,8 @@ systemctl stop firewalld.service
 systemctl disable firewalld.service
 
 
-echo "net.ipv4.ip_forward=1" > /etc/sysctl.conf
+sed -i 's@net.ipv4.ip_forward.*@net.ipv4.ip_forward = 1@g' /etc/sysctl.conf
+
 sysctl -p /etc/sysctl.conf 
 
 
