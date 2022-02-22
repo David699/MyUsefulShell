@@ -1,0 +1,9 @@
+下载 delegated-apnic-latest.txt
+网址 ftp.apnic.net/stats/apnic/delegated-apnic-latest
+
+运行 生成非中国路由
+python  .\non-chinaip.py  .\delegated-apnic-latest.txt 20  > out.txt
+
+
+运行 生成中国路由
+python  .\chinaip.py  .\delegated-apnic-latest.txt 20  > out.txt
