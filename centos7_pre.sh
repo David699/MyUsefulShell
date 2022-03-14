@@ -10,6 +10,8 @@ systemctl disable firewalld.service
 
 sed -i 's@net.ipv4.ip_forward.*@net.ipv4.ip_forward = 1@g' /etc/sysctl.conf
 
+echo "net.ipv4.ip_forward = 1" >>  /etc/sysctl.conf
+
 sysctl -p /etc/sysctl.conf 
 
 
